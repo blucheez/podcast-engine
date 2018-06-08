@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/blucheez/podcast-engine/issues"
   },
-  "homepage": "https://github.com/blucheez/podcast-engine#readme"
+  "homepage": "https://github.com/blucheez/podcast-engine#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-formidable": "^1.0.0"
+  }
 }

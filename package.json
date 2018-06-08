@@ -1,23 +1,16 @@
 {
   "name": "podcast-engine",
-  "version": "0.0.1",
-  "description": "",
-  "main": "javascript/index.js",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
-    "http": "0.0.0"
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "react-scripts": "1.1.4"
   },
-  "devDependencies": {},
   "scripts": {
-    "start": "node javascript/index.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/blucheez/podcast-engine.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/blucheez/podcast-engine/issues"
-  },
-  "homepage": "https://github.com/blucheez/podcast-engine#readme"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
 }

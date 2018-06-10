@@ -4,7 +4,7 @@
   "description": "",
   "main": "javascript/index.js",
   "scripts": {
-    "start": "node javascript/index.js"
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -17,7 +17,11 @@
   },
   "homepage": "https://github.com/blucheez/podcast-engine#readme",
   "dependencies": {
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.3",
     "express": "^4.16.3",
-    "express-formidable": "^1.0.0"
+    "express-formidable": "^1.0.0",
+    "express-session": "^1.15.6",
+    "request": "^2.87.0"
   }
 }

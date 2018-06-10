@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <title>Home</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+    <!--Independent CSS file-->
+    <link type="text/css" rel="stylesheet" href="../css/home.css"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <header>
+      <nav class="teal">
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">Podcast Engine</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="login.html"><span id="username">Login</span></a></li>
+            <li><a href="home.html">Browse</a></li>
+            <li><a href="subs.html">Subscriptions</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="login.html">Login</a></li>
+        <li><a href="home.html">Browse</a></li>
+        <li><a href="subs.html">Subscriptions</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col s12 search">
+            <form action="#" onsubmit="return look()" class="search-wrapper">
+              <div class="row valign-wrapper">
+                  <i class="material-icons">search</i>
+                  <input id="query" placeholder="Search for podcasts"/>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12">
+            <h4 id="reporter">Search something to begin</h4>
+          </div>
+        </div>
+        <div id = "results" class="row">
+          
+        </div>
+
+      </div>
+
+    </main>
+    <footer class="teal page-footer">
+
+    </footer>
+
+
+
+    <!--Jquery-->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <!--Materialize-->
+    <script type="text/javascript" src="../javascript/materialize.min.js"></script>
+    <!--Our own javascript-->
+    <script type="text/javascript" src="../javascript/home.js"></script>
+
+
+  </body>
+</html>

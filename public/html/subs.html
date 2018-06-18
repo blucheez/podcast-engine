@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <title>Home</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+    <!--Independent CSS file-->
+    <link type="text/css" rel="stylesheet" href="../css/home.css"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <header>
+      <nav class="teal">
+        <div class="nav-wrapper">
+          <a href="#!" class="brand-logo">Podcast Engine</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a onclick="login()"><span id="username">Login</span></a></li>
+            <li><a href="home">Browse</a></li>
+            <li><a href="subs">Subscriptions</a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <ul class="sidenav" id="mobile-demo">
+        <li><a onclick="login()">Login</a></li>
+        <li><a href="home">Browse</a></li>
+        <li><a href="subs">Subscriptions</a></li>
+      </ul>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="row">
+          <div class="col s12">
+            <h4 id="reporter">Your subscribed podcasts</h4>
+          </div>
+        </div>
+        <div id = "results" class="row">
+          <h2>You must log in first</h2>
+        </div>
+
+        <!--Card here for popup interaction-->
+        <div id="popup" class="card hide">
+          <div class="row">
+            <a onclick="hidePopup()"
+            class="btn-flat btn-large waves-effect waves-light">
+            <i class="material-icons">close</i></a>
+          </div>
+          <div id = "popupContent" class = "row container">
+            ayy lmao whats up
+          </div>
+        </div>
+      </div>
+
+    </main>
+    <footer class="teal page-footer">
+
+    </footer>
+
+
+
+    <!--Jquery-->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <!--Materialize-->
+    <script type="text/javascript" src="../javascript/materialize.min.js"></script>
+    <!--Our own javascript-->
+    <script type="text/javascript" src="../javascript/subs.js"></script>
+    <script type="text/javascript" src="../javascript/helper.js"></script>
+
+  </body>
+</html>

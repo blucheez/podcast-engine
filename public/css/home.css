@@ -7,3 +7,12 @@ body {
 main {
   flex: 1 0 auto;
 }
+#popup {
+  position: fixed;
+  width: 40%;
+  height: 60%;
+  top: 50%;
+  left: 50%;
+  margin-top: -15%; /* Negative half of height. */
+  margin-left: -20%; /* Negative half of width. */
+}

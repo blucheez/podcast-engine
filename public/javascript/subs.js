@@ -12,6 +12,7 @@ $(document).ready(function() {
       loggedIn = true;
       $("#username").html(name);
 
+
       // load the subscribed podcasts
       $.get("https://gpodder.net/subscriptions/" + name + ".json", function(data) {
         for(var i = 0; i < data.length; i++) {

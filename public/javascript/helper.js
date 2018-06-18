@@ -65,7 +65,7 @@ function login() {
     form = `
     <form method="post" action="/login">
       Username: <input name = "username" type = "text" />
-      Password: <input name = "password" type = "text" />
+      Password: <input name = "password" type = "password" />
       <input type = "submit" value = "Submit"/>\
     </form>
     `;

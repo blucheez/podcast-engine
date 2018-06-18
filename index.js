@@ -41,6 +41,23 @@ app.post("/login", function(req, res) {
   req.session.password = req.body.password;
   console.log("Logged in " + req.session.username);
 
+  // use the request API to officially log in
+  // however, I can't seem to get this working
+  // how do they want the Cookie? I have the username and password
+  // but the API doc does not specify how they want us to give it to them
+  request.post({
+    headers: {'content-type' : 'application/x-www-form-urlencoded',
+    'Cookie' : "username=" + req.session.username + "; password=" + req.session.password},
+    url: "https://gpodder.net/api/2/auth/" + req.session.username + "/login.json",
+    body: "username=" + req.session.username
+  }, function(error, response, body) {
+    console.log("error: " + error);
+    console.log("response: " + response);
+    console.log(response.sessionid);
+    console.log(response.body);
+    console.log("body: " + body);
+  });
+
   res.sendFile(path + "/public/html/home.html");
 });
 
@@ -61,8 +78,3 @@ app.post("/getUserName", function(req, res) {
 app.listen(port, function() {
   console.log("Listening on " + port);
 });
-
-// function to get data from username and password
-function gpodderRequest(username, password) {
-  return "DEFAULT REQUEST";
-}
